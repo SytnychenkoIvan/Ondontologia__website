@@ -1,3 +1,25 @@
 //====================================================================================================
+.footer {
+		background-color: #252525;
+		width: 100%;
+		// .footer__text
+
+		// margin: 0 auto;
+		&__text {
+			// padding: rem(13) rem(0);
+			@include adaptiveValue("padding-top", 13, 7);
+			@include adaptiveValue("padding-bottom", 13, 7);
+			// padding-top: rem(13);
+			// padding-bottom: rem(13);
+			text-align: center;
+			font-family: "Montserrat";
+			@include adaptiveValue("font-size", 20, 12);
+			@include adaptiveValue("line-height", 24, 15);
+			// line-height:	rem(24) ;
+			// line-height: math.div(24 , 20);
+			font-weight: 500;
+			color: #FFF9FD;
+		}
+}
 
 //====================================================================================================
