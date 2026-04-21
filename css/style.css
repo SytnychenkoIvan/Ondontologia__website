@@ -299,8 +299,16 @@ h6 {
 }
 
 .footer {
-  background-color: #252525;
   width: 100%;
+}
+
+.footer__map {
+  z-index: 1;
+  min-width: 100%;
+}
+
+.footer__text {
+  background-color: #252525;
 }
 
 .footer__text {
@@ -354,6 +362,10 @@ h6 {
     -webkit-column-gap: 3.75rem;
        -moz-column-gap: 3.75rem;
             column-gap: 3.75rem;
+  }
+
+  .footer__map {
+    height: 35.9375rem;
   }
 
   .footer__text {
@@ -414,6 +426,10 @@ h6 {
     -webkit-column-gap: 1.25rem;
        -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
+  }
+
+  .footer__map {
+    height: 24.5625rem;
   }
 
   .footer__text {
@@ -724,6 +740,18 @@ h6 {
       -webkit-column-gap: calc(1.25rem + 2.5*(100vw - 20rem)/79.6875);
          -moz-column-gap: calc(1.25rem + 2.5*(100vw - 20rem)/79.6875);
               column-gap: calc(1.25rem + 2.5*(100vw - 20rem)/79.6875);
+    }
+}
+
+@supports (height: clamp( 24.5625rem , 21.7075980392rem  +  14.2745098039vw , 35.9375rem )) {
+    .footer__map {
+      height: clamp( 24.5625rem , 21.7075980392rem  +  14.2745098039vw , 35.9375rem );
+    }
+}
+
+@supports not (height: clamp( 24.5625rem , 21.7075980392rem  +  14.2745098039vw , 35.9375rem )) {
+    .footer__map {
+      height: calc(24.5625rem + 11.375*(100vw - 20rem)/79.6875);
     }
 }
 
