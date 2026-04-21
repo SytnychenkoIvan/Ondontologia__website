@@ -1,11 +1,17 @@
 //====================================================================================================
 .footer {
-		background-color: #252525;
-		width: 100%;
-		// .footer__text
-
-		// margin: 0 auto;
-		&__text {
+	width: 100%;
+	&__map{
+		z-index: 1;
+		min-width: 100%;
+		// min-height: rem(575)
+		@include adaptiveValue("height", 575, 393);
+	}
+	// .footer__text
+	
+	// margin: 0 auto;
+	&__text {
+			background-color: #252525;
 			// padding: rem(13) rem(0);
 			@include adaptiveValue("padding-top", 13, 7);
 			@include adaptiveValue("padding-bottom", 13, 7);
