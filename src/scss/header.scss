@@ -1,6 +1,7 @@
 //====================================================================================================
 .header {
 		background-color: #FFF9FD;
+		z-index: 3;
 		// .header__container
 
 		&__container {
@@ -9,13 +10,9 @@
 			justify-content: space-between;
 			@include adaptiveValue("padding-top",20 ,30 );
 			@include adaptiveValue("padding-bottom",20 ,30 );
-			// padding-top: rem(20);
-			// padding-bottom: rem(20);
 			column-gap: rem(20);
 			@media (max-width:$mobile){
-				justify-content: space-between;
-				//   padding-top: rem(26.5);
-				//   padding-bottom: rem(26.5);
+				// justify-content: space-between;
 			}
 			position: relative;
 		}
@@ -27,8 +24,6 @@
 			column-gap: rem(20);
 			align-items: center;
 			@media (max-width:$mobile){
-				// align-items: start;
-				// order: 0;
 			}
 		}
 
