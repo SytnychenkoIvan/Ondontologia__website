@@ -1,0 +1,31 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.button-border{
+		white-space: nowrap;
+		font-size: rem(18);
+		text-align: center;
+		@include adaptiveValue("font-size", 18, 13);
+		@include adaptiveValue("padding-left", 39, 24);
+		@include adaptiveValue("padding-right", 39, 24);
+		padding-top: rem(12);
+		padding-bottom: rem(12);
+		line-height: math.div(27 , 18);
+		font-weight: 300;
+		color: #00296D;
+		border: 1px solid #00296D;
+		border-radius: rem(15);
+		// padding: rem(12) rem(39);
+		background: linear-gradient(to bottom, #44C6E9 50%, transparent 50%);
+      background-size: 100% 200%;
+      background-position: 0 100%;
+      transition: background-position 0.3s ease, color 0.3s ease;&:hover {
+      background-position: 0 0;
+      color: #fff;
+      }
+      @media (max-width:$mobile){
+			border-radius: rem(10);
+			color: #666666;
+			border: 1px solid #666666;
+			max-width: 140px;
+         padding: rem(9) rem(24);
+		}
+}
