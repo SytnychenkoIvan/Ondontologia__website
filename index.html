@@ -6,11 +6,11 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20260421185238">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260422213636">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css?_v=20260421185238" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css?_v=20260422213636" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
 
 <body>
@@ -41,13 +41,58 @@
 					</nav>
 				</div>
 				<div class="header__actions">
-					<a data-da=".menu__icons,767.98" class="header__button button-border">Saca tu turno</a>
+					<a data-da=".menu__icons,767.98" class="header__button button-border btn">Saca tu turno</a>
 					<button type="button" class="icon-menu"><span></span></button>
 				</div>
 			</div>
 		</header>
 		<main class="page">
-
+			<section class="page__main main">
+				<div class="main__container">
+					<div class="main__content">
+						<p class="main__subtitle subtitle">En Cordoba Capital</p>
+						<h1 class="main__title title">Una excelente experiencia <span>Odontológica</span></h1>
+						<p class="main__text text">Lorem ipsum dolor sit amet consectetur adipiscing elit molestie, rhoncus luctus arcu ut eros augue. Eu commodo laoreet parturient quam purus magna pretium luctus.</p>
+						<div class="main__battons">
+							<a href="" class="main__button-blue btn">Saca tu turno</a>
+							<a href="" class="main__button-clear btn">Nuestro Servicios</a>
+						</div>
+					</div>
+					<div class="main__image">
+						<picture><source srcset="img/main/main.webp" type="image/webp"><img src="img/main/main.png" alt="Main"></picture>
+					</div>
+				</div>
+			</section>
+			<div class="page__comtacts contacts">
+				<div class="contacts__container">
+					<div class="contacts__items contact">
+						<article class="contact__item">
+							<div class="contact__icon"><img src="img/contacts/location.svg" alt="Location"></div>
+							<h4 class="contact__title">Dirección</h4>
+							<div class="contact__text">
+								<p>Av. Color 1560</p>
+								<p>Cordoba, Cordoba Capital</p>
+							</div>
+						</article>
+						<article class="contact__item">
+							<div class="contact__icon"><img src="img/contacts/email.svg" alt="Emale"></div>
+							<h4 class="contact__title">Email</h4>
+							<div class="contact__text">
+								<p>info@tudentista.com.ar</p>
+								<p>info@tudentista.com.ar</p>
+							</div>
+						</article>
+						<article class="contact__item">
+							<div class="contact__icon"><img src="img/contacts/phone.svg" alt="Phone"></div>
+							<h4 class="contact__title">Telefonos</h4>
+							<div class="contact__text">
+								<p>351 7608XXX</p>
+								<p>351 7608XXX</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer class="footer">
 			<div id="map" class="footer__map"></div>
@@ -58,8 +103,8 @@
 
 
 	</div>
-	<script src="js/app.min.js?_v=20260421185238"></script>
-	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js?_v=20260421185238" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<script src="js/app.min.js?_v=20260422213636"></script>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js?_v=20260422213636" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 	<script>
 		var map = L.map('map').setView([-31.408166074414183, -64.20115634462167], 17);
 		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
