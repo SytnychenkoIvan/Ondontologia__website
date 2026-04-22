@@ -1,18 +1,33 @@
 // Заголовки, загальні БЕМ блоки та інше...
-.button-border{
-		white-space: nowrap;
-		font-size: rem(18);
-		text-align: center;
-		@include adaptiveValue("font-size", 18, 13);
+
+.page {
+
+		// .page__main
+
+		&__main {
+		}
+		&__comtacts {
+		}
+}
+//========================================================================================================================================================
+.btn{
+	white-space: nowrap;
+	text-align: center;
+	@include adaptiveValue("font-size", 18, 13);
 		@include adaptiveValue("padding-left", 39, 24);
 		@include adaptiveValue("padding-right", 39, 24);
-		padding-top: rem(12);
-		padding-bottom: rem(12);
+		padding-top: rem(11);
+		padding-bottom: rem(11);
 		line-height: math.div(27 , 18);
+		border-radius: rem(15);
+		@media (max-width:$mobile){
+			border-radius: rem(10); 
+		}
+}
+.button-border{
 		font-weight: 300;
 		color: #00296D;
 		border: 1px solid #00296D;
-		border-radius: rem(15);
 		background: linear-gradient(to bottom, #44C6E9 50%, transparent 50%);
       background-size: 100% 200%;
       background-position: 0 100%;
@@ -22,7 +37,6 @@
 		color: #fff;
 	}
 	@media (max-width:$mobile){
-			border-radius: rem(10);
 			color: #666666;
 			border: 1px solid #666666;
 			max-width: 140px;
@@ -31,4 +45,26 @@
 			background-size: 100% 200%;
          background-position: 0 100%;
 		}
+}
+
+.subtitle {
+	font-family: $fontFamily;
+	@include adaptiveValue("font-size", 20, 13);
+	@include adaptiveValue("line-height", 30, 20);
+			font-weight: 400;
+			color: #2977D5;
+}
+.title{
+	font-family: $fontFamily;
+	font-weight: 600;
+	@include adaptiveValue("font-size", 64, 32);
+	@include adaptiveValue("line-height", 96, 48);
+}
+.text {
+	font-family: "Source Sans 3";
+	@include adaptiveValue("font-size", 20, 13);
+	@include adaptiveValue("line-height", 28, 19);
+	font-weight: 300;
+	color: #252525;
+	padding: rem(0) rem(5) rem(0) rem(0);
 }

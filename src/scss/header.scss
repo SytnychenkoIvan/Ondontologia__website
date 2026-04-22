@@ -1,15 +1,25 @@
 //====================================================================================================
 .header {
 		background-color: #FFF9FD;
-		z-index: 3;
+		transition: all 0.3s ease 0s;
+		z-index: 100;
+		position: fixed;
+		width: 100%;
+		@include adaptiveValue("height",110 ,100 );
+		top: 0;
+		left: 0;
+		@include adaptiveValue("padding-top",20 ,30 );
+			@include adaptiveValue("padding-bottom",20 ,30 );
 		// .header__container
-
+		&._header-scroll{
+			
+		}
 		&__container {
+			z-index: 100;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			@include adaptiveValue("padding-top",20 ,30 );
-			@include adaptiveValue("padding-bottom",20 ,30 );
+			
 			column-gap: rem(20);
 			position: relative;
 		}
@@ -21,12 +31,14 @@
 			column-gap: rem(20);
 			align-items: center;
 			@media (max-width:$mobile){
+				
 			}
 		}
 
 		// .header__logo-icon
 
 		&__logo-icon {
+			z-index: 100;
 			img{
 				@include adaptiveValue("width", 55, 40);
 			}
@@ -35,13 +47,15 @@
 		// .header__logo-name
 		
 		&__logo-name {
+			z-index: 80;
 			text-align: center;
 			@media (max-width:$mobile){
 				position: absolute;
-				width: 100%;
+				width: auto;
 				height: auto;
-				top: 23px;
-				left: 0;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
 			}
 		}
 		
@@ -104,8 +118,9 @@
 				height: auto;
 				top: 0;
 				left: -100%;
-				margin-top: rem(100);
-				padding: rem(38) rem(20);
+				// margin-top: rem(100);
+				padding-top: rem(138);
+				padding: rem(138) rem(20) rem(38) rem(20);
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
