@@ -8,6 +8,8 @@
 		}
 		&__comtacts {
 		}
+		&__services {
+		}
 }
 //========================================================================================================================================================
 .btn{
@@ -67,4 +69,8 @@
 	font-weight: 300;
 	color: #252525;
 	padding: rem(0) rem(5) rem(0) rem(0);
+}
+.header-title{
+	margin-bottom: rem(80);
+			@include adaptiveValue("margin-bottom", 80, 40);
 }

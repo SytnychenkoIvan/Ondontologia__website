@@ -10,9 +10,26 @@
 		left: 0;
 		@include adaptiveValue("padding-top",20 ,30 );
 			@include adaptiveValue("padding-bottom",20 ,30 );
+			&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		z-index: -1;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		
+	}
 		// .header__container
 		&._header-scroll{
-			
+			background-color: rgba(0, 0, 0, 0.1);
+			// color: #FFF9FD;
+			// opacity: 0.5;
+			&::before{
+				opacity: 1;
+			}
 		}
 		&__container {
 			z-index: 100;
