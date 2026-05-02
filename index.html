@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<a href="" class="header__logo-icon"><img src="img/logo.svg" alt="Logo"></a>
+					<div class="header__logo-name">
+						<p class="header__logo-title">Ondontologia Integral</p>
+						<p class="header__logo-subtitle">Salud & Estetica Dental</p>
+					</div>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<div class="menu__icons">
+							<a href="" class="menu__icon"><img src="img/icons/linkedin.svg" alt="Linkedin"></a>
+							<a href="" class="menu__icon"><img src="img/icons/gmail.svg" alt="Gmail"></a>
+							<a href="" class="menu__icon"><img src="img/icons/instagram.svg" alt="Instagram"></a>
+							<a href="" class="menu__icon"><img src="img/icons/facebook.svg" alt="Facebook"></a>
+						</div>
+						<ul class="menu__list">
+							<li class="menu__item"><a data-goto=".sarvices" href="#" class="menu__link">Inicio</a></li>
+							<li class="menu__item"><a data-goto=".portfolio" href="#" class="menu__link">Servicios</a></li>
+							<li class="menu__item"><a data-goto=".career" href="#" class="menu__link">Nosotros</a></li>
+							<li class="menu__item"><a data-goto=".blog" href="#" class="menu__link">Contacto</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<a data-da=".menu__icons,767.98" class="header__button button-border btn">Saca tu turno</a>
+					<button type="button" class="icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main main">
+				<div class="main__container">
+					<div class="main__content">
+						<p class="main__subtitle subtitle">En Cordoba Capital</p>
+						<h1 class="main__title title">Una excelente experiencia <span>Odontológica</span></h1>
+						<p class="main__text text">Lorem ipsum dolor sit amet consectetur adipiscing elit molestie, rhoncus
+							luctus arcu ut eros augue. Eu commodo laoreet parturient quam purus magna pretium luctus.</p>
+						<div class="main__battons">
+							<a href="" class="main__button-blue btn">Saca tu turno</a>
+							<a href="" class="main__button-clear btn">Nuestro Servicios</a>
+						</div>
+					</div>
+					<div class="main__image">
+						<img src="img/main/main.png" alt="Main">
+					</div>
+				</div>
+			</section>
+			<div class="page__comtacts contacts">
+				<div class="contacts__container">
+					<div class="contacts__items contact">
+						<article class="contact__item">
+							<div class="contact__icon"><img src="img/contacts/location.svg" alt="Location"></div>
+							<h4 class="contact__title">Dirección</h4>
+							<div class="contact__text">
+								<p>Av. Color 1560</p>
+								<p>Cordoba, Cordoba Capital</p>
+							</div>
+						</article>
+						<article class="contact__item">
+							<div class="contact__icon"><img src="img/contacts/email.svg" alt="Emale"></div>
+							<h4 class="contact__title">Email</h4>
+							<div class="contact__text">
+								<p>info@tudentista.com.ar</p>
+								<p>info@tudentista.com.ar</p>
+							</div>
+						</article>
+						<article class="contact__item">
+							<div class="contact__icon"><img src="img/contacts/phone.svg" alt="Phone"></div>
+							<h4 class="contact__title">Telefonos</h4>
+							<div class="contact__text">
+								<p>351 7608XXX</p>
+								<p>351 7608XXX</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+			<section class="page__services services">
+				<img class="services__bg" src="img/services/bg-tooth.png" alt="BG">
+				<div class="services__container">
+					<div class="services__header header-title">
+						<p class="services__subtitle subtitle">Especialidades</p>
+						<h2 class="services__title title">Nuestros Servicios</h2>
+					</div>
+					<div class="services__items">
+						<article class="services__item item-services">
+							<div class="item-services__image"><img src="img/services/1.svg" alt="Icon"></div>
+							<div class="item-services__body">
+								<h4 class="item-services__title">Implantes</h4>
+								<div class="item-services__text text">
+									<p>Los implantes dentales son un sustituto artificial de los dientes y sus raíces.
+										Generalmente de forma roscada, los implantes poseen un aspecto y sensación similares a los
+										dientes naturales logrando de esta manera una mayor comodidad, seguridad y confianza en su
+										uso, respecto de otros métodos.</p>
+								</div>
+							</div>
+							<div class="item-services__link text">
+								<a href="#">
+									<p>
+										Ver Mas
+									</p>
+									<img src="img/services/arrow.svg" alt="Arrow">
+								</a>
+							</div>
+						</article>
+						<article class="services__item item-services">
+							<div class="item-services__image"><img src="img/services/2.svg" alt="Icon"></div>
+							<div class="item-services__body">
+								<h4 class="item-services__title">Ortodoncia</h4>
+								<div class="item-services__text text">
+									<p>La ortodoncia con brackets de cerámica ofrece una estética más cuidada, en comparación a
+										la ortodoncia metálica. Los resultados en cuanto a alineación dentaria son similares a la
+										alternativa mencionada. Opción ideal para quienes buscan cuidar la estética y el bolsillo.
+									</p>
+								</div>
+							</div>
+							<div class="item-services__link text">
+								<a href="#">
+									<p>Ver Mas</p>
+									<img src="img/services/arrow.svg" alt="Arrow">
+								</a>
+							</div>
+						</article>
+						<article class="services__item item-services">
+							<div class="item-services__image"><img src="img/services/3.svg" alt="Icon"></div>
+							<div class="item-services__body">
+								<h4 class="item-services__title">Implantes</h4>
+								<div class="item-services__text text">
+									<p>Los implantes dentales son un sustituto artificial de los dientes y sus raíces.
+										Generalmente de forma roscada, los implantes poseen un aspecto y sensación similares a los
+										dientes naturales logrando de esta manera una mayor comodidad, seguridad y confianza en su
+										uso, respecto de otros métodos.</p>
+								</div>
+							</div>
+							<div class="item-services__link text">
+								<a href="#">
+									<p>Ver Mas</p>
+									<img src="img/services/arrow.svg" alt="Arrow">
+								</a>
+							</div>
+						</article>
+						<article class="services__item item-services">
+							<div class="item-services__image"><img src="img/services/4.svg" alt="Icon"></div>
+							<div class="item-services__body">
+								<h4 class="item-services__title">Implantes</h4>
+								<div class="item-services__text text">
+									<p>Los implantes dentales son un sustituto artificial de los dientes y sus raíces.
+										Generalmente de forma roscada, los implantes poseen un aspecto y sensación similares a los
+										dientes naturales logrando de esta manera una mayor comodidad, seguridad y confianza en su
+										uso, respecto de otros métodos.</p>
+								</div>
+							</div>
+							<div class="item-services__link text">
+								<a href="#">
+									<p>Ver Mas</p>
+									<img src="img/services/arrow.svg" alt="Arrow">
+								</a>
+							</div>
+						</article>
+						<article class="services__item item-services">
+							<div class="item-services__image"><img src="img/services/5.svg" alt="Icon"></div>
+							<div class="item-services__body">
+								<h4 class="item-services__title">Implantes</h4>
+								<div class="item-services__text text">
+									<p>Los implantes dentales son un sustituto artificial de los dientes y sus raíces.
+										Generalmente de forma roscada, los implantes poseen un aspecto y sensación similares a los
+										dientes naturales logrando de esta manera una mayor comodidad, seguridad y confianza en su
+										uso, respecto de otros métodos.</p>
+								</div>
+							</div>
+							<div class="item-services__link text">
+								<a href="#">
+									<p>Ver Mas</p>
+									<img src="img/services/arrow.svg" alt="Arrow">
+								</a>
+							</div>
+						</article>
+						<article class="services__item item-services">
+							<div class="item-services__image"><img src="img/services/6.svg" alt="Icon"></div>
+							<div class="item-services__body">
+								<h4 class="item-services__title">Implantes</h4>
+								<div class="item-services__text text">
+									<p>Los implantes dentales son un sustituto artificial de los dientes y sus raíces.
+										Generalmente de forma roscada, los implantes poseen un aspecto y sensación similares a los
+										dientes naturales logrando de esta manera una mayor comodidad, seguridad y confianza en su
+										uso, respecto de otros métodos.</p>
+								</div>
+							</div>
+							<div class="item-services__link text">
+								<a href="#">
+									<p>
+										Ver Mas
+									</p>
+									<img src="img/services/arrow.svg" alt="Arrow">
+								</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__testimonials testimonials">
+				<div class="testimonials__container">
+					<div class="testimonials__header header-title">
+						<p class="testimonials__subtitle subtitle">Testimonios</p>
+						<h2 class="testimonials__title title">Lo que opinan nuestros Pacientes</h2>
+					</div>
+					<!-- Оболонка слайдера -->
+					<div class="testimonials__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="testimonials__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="testimonials__slide swiper-slide slide-testimonial">
+								<div class="slide-testimonial__head">
+									<h4 class="slide-testimonial__name">Matias Gomez</h4>
+									<div class="slide-testimonial__rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+									</div>
+								</div>
+								<div class="slide-testimonial__text text">
+									Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus
+									ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames.
+								</div>
+							</div>
+							<div class="testimonials__slide swiper-slide slide-testimonial">
+								<div class="slide-testimonial__head">
+									<h4 class="slide-testimonial__name">Maria Paz</h4>
+									<div class="slide-testimonial__rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+									</div>
+								</div>
+								<div class="slide-testimonial__text text">
+									Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus
+									ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames.
+								</div>
+							</div>
+							<div class="testimonials__slide swiper-slide slide-testimonial">
+								<div class="slide-testimonial__head">
+									<h4 class="slide-testimonial__name">Silvia Rios</h4>
+									<div class="slide-testimonial__rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+									</div>
+								</div>
+								<div class="slide-testimonial__text text">
+									Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus
+									ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames.
+								</div>
+							</div>
+							<div class="testimonials__slide swiper-slide slide-testimonial">
+								<div class="slide-testimonial__head">
+									<h4 class="slide-testimonial__name">Matias Gomez</h4>
+									<div class="slide-testimonial__rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+									</div>
+								</div>
+								<div class="slide-testimonial__text text">
+									Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus
+									ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames.
+								</div>
+							</div>
+							<div class="testimonials__slide swiper-slide slide-testimonial">
+								<div class="slide-testimonial__head">
+									<h4 class="slide-testimonial__name">Maria Paz</h4>
+									<div class="slide-testimonial__rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+									</div>
+								</div>
+								<div class="slide-testimonial__text text">
+									Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus
+									ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames.
+								</div>
+							</div>
+							<div class="testimonials__slide swiper-slide slide-testimonial">
+								<div class="slide-testimonial__head">
+									<h4 class="slide-testimonial__name">Silvia Rios</h4>
+									<div class="slide-testimonial__rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+										<img src="img/testimonials/star.svg" alt="Rating">
+									</div>
+								</div>
+								<div class="slide-testimonial__text text">
+									Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus
+									ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames.
+								</div>
+							</div>
+						</div>
+						<!-- Якщо потрібна пагінація -->
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="testimonials__action">
+						<button class="testimonials__button btn">Ver Mas Reviews</button>
+					</div>
+				</div>
+			</section>
+			<section class="page__about about">
+				<div class="about__container">
+					<div class="about__imege">
+						<img src="img/about/about.png" alt="About">
+					</div>
+					<div class="about__content">
+						<div class="about__header header-title">
+							<p class="about__subtitle subtitle">Sobre Mi</p>
+							<h2 class="about__title title">Dra. Patricia Nieves Kiriaco </h2>
+						</div>
+						<div class="about__list text">
+							<ul>
+								<li>Médica Cirujano, graduada en la Universidad Nacional de Córdoba, Argentina.</li>
+								<li>Odontóloga, graduada en la Universidad de París, Francia</li>
+								<li>Docente de la Universidad Nacional de Córdoba desde el año 1975</li>
+								<li>Miembro de las siguientes Academias:
+									<ul>
+										<li>A.L.A.O: Academia Latinoamericana de Oseointegración.</li>
+										<li>A.I.I.O: Academia Internacional de Implantes y Oseointegración . Miembro Fundador</li>
+										<li>A.V.O.I.O: Academia Venezolana de Oseointegración e Implantologìa Oral. Miembro
+											Honorario.</li>
+										<li>Pierre Fauchard Academy: Academia de Honor de Odontologìa de E.E.U.U.</li>
+										<li>A.I.I.P: Academia Internacional de Implantología y Periodoncia – Barcelona. Presidente
+											Internacional.</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__clinica clinica">
+				<img class="clinica__decor" src="img/clinica/decor-bg.svg" alt="Decor BG">
+				<div class="clinica__container">
+					<div class="clinica__header header-title">
+						<p class="clinica__subtitle subtitle">Las Instalaciones</p>
+						<h2 class="clinica__title title">Nuestra Clinica</h2>
+					</div>
+					<!-- Оболонка слайдера -->
+					<div class="clinica__slider swiperr">
+						<!-- Частина слайдера, що рухається -->
+						<div class="clinica__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="clinica__slide swiper-slide">
+								<img src="img/clinica/clinica.png" alt="Clinica">
+							</div>
+							<div class="clinica__slide swiper-slide">
+								<img src="img/clinica/clinica.png" alt="Clinica">
+							</div>
+							<div class="clinica__slide swiper-slide">
+								<img src="img/clinica/clinica.png" alt="Clinica">
+							</div>
+							<div class="clinica__slide swiper-slide">
+								<img src="img/clinica/clinica.png" alt="Clinica">
+							</div>
+							<div class="clinica__slide swiper-slide">
+								<img src="img/clinica/clinica.png" alt="Clinica">
+							</div>
+							<div class="clinica__slide swiper-slide">
+								<img src="img/clinica/clinica.png" alt="Clinica">
+							</div>
+						</div>
+						<!-- Якщо потрібна пагінація -->
+						<div class="swiper-pagination gray"></div>
+						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+						<button type="button" class="swiper-button-prev"></button>
+						<button type="button" class="swiper-button-next"></button>
+					</div>
+				</div>
+			</section>
+			<section class="page__questions questions">
+				<div class="questions__container">
+					<div class="questions__header header-title">
+						<p class="questions__subtitle subtitle">Sacate las dudas</p>
+						<h2 class="questions__title title">Preguntas Frecuentes</h2>
+					</div>
+					<div data-spollers data-one-spoller class="spollers">
+						<article class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">
+								<p>¿Que Obras sociales aceptan?</p>
+								<img src="img/questions/spoller-arrow.svg" alt="" class="arrow">
+							</button>
+							<div class="spollers__body text">Lorem ipsum dolor sit amet consectetur adipiscing elit conubia,
+								massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam
+								vivamus vehicula fames. Convallis ornare praesent mollis at habitasse morbi eu ridiculus,
+								tristique proin venenatis dictum nisl volutpat interdum, eleifend velit erat mi penatibus nibh
+								curabitur. Vestibulum augue condimentum luctus auctor nullam imperdiet magna, mattis scelerisque
+								erat odio aliquam risus nam morbi, accumsan dapibus montes facilisis suspendisse rhoncus.</div>
+						</article>
+						<article class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">
+								<p>¿Que Obras sociales aceptan?</p>
+								<img src="img/questions/spoller-arrow.svg" alt="" class="arrow">
+							</button>
+							<div class="spollers__body text">Lorem ipsum dolor sit amet consectetur adipiscing elit conubia,
+								massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam
+								vivamus vehicula fames. Convallis ornare praesent mollis at habitasse morbi eu ridiculus,
+								tristique proin venenatis dictum nisl volutpat interdum, eleifend velit erat mi penatibus nibh
+								curabitur. Vestibulum augue condimentum luctus auctor nullam imperdiet magna, mattis scelerisque
+								erat odio aliquam risus nam morbi, accumsan dapibus montes facilisis suspendisse rhoncus.</div>
+						</article>
+						<article class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">
+								<p>¿Que Obras sociales aceptan?</p>
+								<img src="img/questions/spoller-arrow.svg" alt="" class="arrow">
+							</button>
+							<div class="spollers__body text">Lorem ipsum dolor sit amet consectetur adipiscing elit conubia,
+								massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam
+								vivamus vehicula fames. Convallis ornare praesent mollis at habitasse morbi eu ridiculus,
+								tristique proin venenatis dictum nisl volutpat interdum, eleifend velit erat mi penatibus nibh
+								curabitur. Vestibulum augue condimentum luctus auctor nullam imperdiet magna, mattis scelerisque
+								erat odio aliquam risus nam morbi, accumsan dapibus montes facilisis suspendisse rhoncus.</div>
+						</article>
+						<article class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">
+								<p>¿Que Obras sociales aceptan?</p>
+								<img src="img/questions/spoller-arrow.svg" alt="" class="arrow">
+							</button>
+							<div class="spollers__body text">Lorem ipsum dolor sit amet consectetur adipiscing elit conubia,
+								massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam
+								vivamus vehicula fames. Convallis ornare praesent mollis at habitasse morbi eu ridiculus,
+								tristique proin venenatis dictum nisl volutpat interdum, eleifend velit erat mi penatibus nibh
+								curabitur. Vestibulum augue condimentum luctus auctor nullam imperdiet magna, mattis scelerisque
+								erat odio aliquam risus nam morbi, accumsan dapibus montes facilisis suspendisse rhoncus.</div>
+						</article>
+						<article class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">
+								<p>¿Que Obras sociales aceptan?</p>
+								<img src="img/questions/spoller-arrow.svg" alt="" class="arrow">
+							</button>
+							<div class="spollers__body text">Lorem ipsum dolor sit amet consectetur adipiscing elit conubia,
+								massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam
+								vivamus vehicula fames. Convallis ornare praesent mollis at habitasse morbi eu ridiculus,
+								tristique proin venenatis dictum nisl volutpat interdum, eleifend velit erat mi penatibus nibh
+								curabitur. Vestibulum augue condimentum luctus auctor nullam imperdiet magna, mattis scelerisque
+								erat odio aliquam risus nam morbi, accumsan dapibus montes facilisis suspendisse rhoncus.</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__contact-form contact-form">
+				<div class="contact-form__container">
+					<div class="contact-form__header header-title">
+						<p class="contact-form__subtitle subtitle">Saca un turno</p>
+						<h2 class="contact-form__title title">Contacto</h2>
+					</div>
+					<div class="contact-form__body">
+						<div class="contact-form__list contacts-items">
+							<div class="contacts-item__items">
+								<div class="contacts-item__item">
+									<img src="img//contact-form/mail.svg" alt="Email" class="contacts-item__icon">
+									<div class="contacts-item__text">
+										<p class="contacts-item__title">Escribinos al Mail</p>
+										<a href="#" class="contacts-item__text-subtitle">info@tudentista.com.ar</a>
+									</div>
+								</div>
+								<div class="contacts-item__item">
+									<img src="img/contact-form/chat.svg" alt="Chat" class="contacts-item__icon">
+									<div class="contacts-item__text">
+										<p class="contacts-item__title">Chatea con Nosotros</p>
+										<a href="#" class="contacts-item__text-subtitle">+54 35176085XX</a>
+									</div>
+								</div>
+								<div class="contacts-item__item">
+									<img src="img/contact-form/phon.svg" alt="Phone" class="contacts-item__icon">
+									<div class="contacts-item__text">
+										<p class="contacts-item__title">Llamanos</p>
+										<a href="#" class="contacts-item__text-subtitle">0810 888 90XX</a>
+									</div>
+								</div>
+								<div class="contacts-item__item">
+									<img src="img/contact-form/location.svg" alt="Location" class="contacts-item__icon">
+									<div class="contacts-item__text">
+										<p class="contacts-item__title">Visitanos</p>
+										<a href="#" class="contacts-item__text-subtitle"> <span>Av. Color 1338, Barrio
+												Alberdi</span> <span>Lunes a Viernes 8 a 18</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="contacts-item__socials-items">
+								<a href="https://www.facebook.com/" target="_blank" class="contacts-item__socials-item">
+									<img src="img/contact-form/faceboock.svg" alt="Facebook">
+								</a>
+								<a href="https://www.linkedin.com" target="_blank" class="contacts-item__socials-item">
+									<img src="img/contact-form/linkedin.svg" alt="Linkedin">
+								</a>
+								<a href="https://www.instagram.com/" target="_blank" class="contacts-item__socials-item">
+									<img src="img/contact-form/instagram.svg" alt="Instagram">
+								</a>
+							</div>
+						</div>
+						<form class="contact-form__forms-body">
+							<h3 class="form-body__title">Ponete en contacto para <br> coordinar un turno</h3>
+							<div class="form-body__item">
+								<input data-error="Introduza o seu nome" data-required="text" type="text" name="name" placeholder="Nombre" class="form-body__input">
+							</div>
+							<div class="form-body__item">
+								<input data-required="email" data-error="Endereço de e-mail incorreto" type="email" name="email" placeholder="Email" class="form-body__input">
+							</div>
+							<div class="form-body__item">
+								<input data-error="Introduza o seu número de telefone" data-required="tel" type="tel" name="phone" placeholder="Telefono" class="form-body__input">
+							</div>
+							<div class="form-body__item">
+								<input type="textarea" name="message" placeholder="Problema" class="form-body__input textarea">
+							</div>
+							<button type="submit" class="form-body__button btn">Enviar</button>
+						</form>
+					</div>
+				</div>
+				<div id="map" class="contact-form__map"></div>
+			</section>
+		</main>
+		<footer class="footer">
+
+			<div class="footer__text">
+				<p>Diseñado por Uncoder.com.ar</p>
+			</div>
+		</footer>
+
+
+	</div>
+	<script src="js/app.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<script>
+		var map = L.map('map').setView([-31.408166074414183, -64.20115634462167], 17);
+		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 19,
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+		}).addTo(map);
+		var marker = L.marker([-31.408166074414183, -64.20115634462167]).addTo(map);
+		marker.bindPopup("<b>The best dentist in the world!.</b>").openPopup();
+	</script>
+</body>
+
+</html>
